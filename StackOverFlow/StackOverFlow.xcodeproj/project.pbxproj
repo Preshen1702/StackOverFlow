@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3BCCCB2720149B002A21AD /* SOFComponentsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3BCCC42720147C002A21AD /* SOFComponentsKit.framework */; };
+		8D3BCCCC2720149B002A21AD /* SOFComponentsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3BCCC42720147C002A21AD /* SOFComponentsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DA48C0927200C110055E893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C0827200C110055E893 /* AppDelegate.swift */; };
 		8DA48C0B27200C110055E893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C0A27200C110055E893 /* SceneDelegate.swift */; };
 		8DA48C0D27200C110055E893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C0C27200C110055E893 /* ViewController.swift */; };
@@ -14,11 +16,30 @@
 		8DA48C1327200C110055E893 /* StackOverFlow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C1127200C110055E893 /* StackOverFlow.xcdatamodeld */; };
 		8DA48C1527200C130055E893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA48C1427200C130055E893 /* Assets.xcassets */; };
 		8DA48C1827200C130055E893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA48C1627200C130055E893 /* LaunchScreen.storyboard */; };
-		8DA48C2327200C130055E893 /* StackOverFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C2227200C130055E893 /* StackOverFlowTests.swift */; };
-		8DA48C2E27200C130055E893 /* StackOverFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C2D27200C130055E893 /* StackOverFlowUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8D3BCCC32720147C002A21AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D3BCCBE2720147C002A21AD /* SOFComponentsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D3BCCA227201448002A21AD;
+			remoteInfo = SOFComponentsKit;
+		};
+		8D3BCCC52720147C002A21AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D3BCCBE2720147C002A21AD /* SOFComponentsKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D3BCCAB27201448002A21AD;
+			remoteInfo = SOFComponentsKitTests;
+		};
+		8D3BCCCE272014A5002A21AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D3BCCBE2720147C002A21AD /* SOFComponentsKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D3BCCA127201448002A21AD;
+			remoteInfo = SOFComponentsKit;
+		};
 		8DA48C1F27200C130055E893 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8DA48BFD27200C110055E893 /* Project object */;
@@ -35,7 +56,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8D3BCCCD2720149B002A21AD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8D3BCCCC2720149B002A21AD /* SOFComponentsKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8D3BCCBE2720147C002A21AD /* SOFComponentsKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SOFComponentsKit.xcodeproj; path = SOFComponentsKit/SOFComponentsKit.xcodeproj; sourceTree = "<group>"; };
 		8DA48C0527200C110055E893 /* StackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA48C0827200C110055E893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DA48C0A27200C110055E893 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,11 +82,8 @@
 		8DA48C1727200C130055E893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DA48C1927200C130055E893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DA48C1E27200C130055E893 /* StackOverFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DA48C2227200C130055E893 /* StackOverFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlowTests.swift; sourceTree = "<group>"; };
-		8DA48C2427200C130055E893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DA48C2927200C130055E893 /* StackOverFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DA48C2D27200C130055E893 /* StackOverFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlowUITests.swift; sourceTree = "<group>"; };
-		8DA48C2F27200C130055E893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DD52D3C272011C30098170A /* components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3BCCCB2720149B002A21AD /* SOFComponentsKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +112,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D3BCCBF2720147C002A21AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D3BCCC42720147C002A21AD /* SOFComponentsKit.framework */,
+				8D3BCCC62720147C002A21AD /* SOFComponentsKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8DA48BFC27200C110055E893 = {
 			isa = PBXGroup;
 			children = (
 				8DA48C0727200C110055E893 /* StackOverFlow */,
-				8DA48C2127200C130055E893 /* StackOverFlowTests */,
-				8DA48C2C27200C130055E893 /* StackOverFlowUITests */,
 				8DA48C0627200C110055E893 /* Products */,
+				8D3BCCBE2720147C002A21AD /* SOFComponentsKit.xcodeproj */,
+				8DD52D3B272011C30098170A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,22 +156,12 @@
 			path = StackOverFlow;
 			sourceTree = "<group>";
 		};
-		8DA48C2127200C130055E893 /* StackOverFlowTests */ = {
+		8DD52D3B272011C30098170A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8DA48C2227200C130055E893 /* StackOverFlowTests.swift */,
-				8DA48C2427200C130055E893 /* Info.plist */,
+				8DD52D3C272011C30098170A /* components.framework */,
 			);
-			path = StackOverFlowTests;
-			sourceTree = "<group>";
-		};
-		8DA48C2C27200C130055E893 /* StackOverFlowUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8DA48C2D27200C130055E893 /* StackOverFlowUITests.swift */,
-				8DA48C2F27200C130055E893 /* Info.plist */,
-			);
-			path = StackOverFlowUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +174,12 @@
 				8DA48C0127200C110055E893 /* Sources */,
 				8DA48C0227200C110055E893 /* Frameworks */,
 				8DA48C0327200C110055E893 /* Resources */,
+				8D3BCCCD2720149B002A21AD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8D3BCCCF272014A5002A21AD /* PBXTargetDependency */,
 			);
 			name = StackOverFlow;
 			productName = StackOverFlow;
@@ -220,6 +255,12 @@
 			mainGroup = 8DA48BFC27200C110055E893;
 			productRefGroup = 8DA48C0627200C110055E893 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8D3BCCBF2720147C002A21AD /* Products */;
+					ProjectRef = 8D3BCCBE2720147C002A21AD /* SOFComponentsKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8DA48C0427200C110055E893 /* StackOverFlow */,
@@ -228,6 +269,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8D3BCCC42720147C002A21AD /* SOFComponentsKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SOFComponentsKit.framework;
+			remoteRef = 8D3BCCC32720147C002A21AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8D3BCCC62720147C002A21AD /* SOFComponentsKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SOFComponentsKitTests.xctest;
+			remoteRef = 8D3BCCC52720147C002A21AD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8DA48C0327200C110055E893 /* Resources */ = {
@@ -272,7 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DA48C2327200C130055E893 /* StackOverFlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,13 +337,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DA48C2E27200C130055E893 /* StackOverFlowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8D3BCCCF272014A5002A21AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SOFComponentsKit;
+			targetProxy = 8D3BCCCE272014A5002A21AD /* PBXContainerItemProxy */;
+		};
 		8DA48C2027200C130055E893 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8DA48C0427200C110055E893 /* StackOverFlow */;
