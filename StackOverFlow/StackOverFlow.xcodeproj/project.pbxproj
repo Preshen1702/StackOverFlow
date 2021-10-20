@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D3BCCCB2720149B002A21AD /* SOFComponentsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3BCCC42720147C002A21AD /* SOFComponentsKit.framework */; };
 		8D3BCCCC2720149B002A21AD /* SOFComponentsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3BCCC42720147C002A21AD /* SOFComponentsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D3BCCE527202525002A21AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3BCCE427202525002A21AD /* Images.xcassets */; };
 		8DA48C0927200C110055E893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C0827200C110055E893 /* AppDelegate.swift */; };
 		8DA48C0B27200C110055E893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C0A27200C110055E893 /* SceneDelegate.swift */; };
 		8DA48C0D27200C110055E893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C0C27200C110055E893 /* ViewController.swift */; };
@@ -72,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		8D3BCCBE2720147C002A21AD /* SOFComponentsKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SOFComponentsKit.xcodeproj; path = SOFComponentsKit/SOFComponentsKit.xcodeproj; sourceTree = "<group>"; };
+		8D3BCCE427202525002A21AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8DA48C0527200C110055E893 /* StackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA48C0827200C110055E893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DA48C0A27200C110055E893 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				8DA48C0C27200C110055E893 /* ViewController.swift */,
 				8DA48C0E27200C110055E893 /* Main.storyboard */,
 				8DA48C1427200C130055E893 /* Assets.xcassets */,
+				8D3BCCE427202525002A21AD /* Images.xcassets */,
 				8DA48C1627200C130055E893 /* LaunchScreen.storyboard */,
 				8DA48C1927200C130055E893 /* Info.plist */,
 				8DA48C1127200C110055E893 /* StackOverFlow.xcdatamodeld */,
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DA48C1827200C130055E893 /* LaunchScreen.storyboard in Resources */,
+				8D3BCCE527202525002A21AD /* Images.xcassets in Resources */,
 				8DA48C1527200C130055E893 /* Assets.xcassets in Resources */,
 				8DA48C1027200C110055E893 /* Main.storyboard in Resources */,
 			);
