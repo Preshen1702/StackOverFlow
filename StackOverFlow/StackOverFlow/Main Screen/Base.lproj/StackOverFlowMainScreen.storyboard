@@ -106,11 +106,22 @@
                         <outlet property="loadingIndicatorView" destination="KA5-va-pLk" id="dgh-v3-XQV"/>
                         <outlet property="searchBarView" destination="65q-G6-VJj" id="O8i-2M-soK"/>
                         <outlet property="tableView" destination="lJP-xb-afA" id="MRG-CI-dpE"/>
+                        <segue destination="yiN-O3-UN6" kind="show" identifier="DetailsSegue" id="DYi-cv-ASB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1136.25" y="123.59154929577466"/>
+        </scene>
+        <!--StackOverFlowDetailsScreen-->
+        <scene sceneID="YLi-Pc-jWf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StackOverFlowDetailsScreen" id="yiN-O3-UN6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fNT-Ag-uKR"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YlY-Mf-4IU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1793" y="92"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Yyd-xg-BlT">

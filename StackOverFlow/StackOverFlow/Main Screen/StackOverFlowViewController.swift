@@ -25,6 +25,19 @@ class StackOverFlowViewController: UIViewController {
         self.setupTableView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.identifier == "DetailsSegue" {
+            let destinationViewController = segue.destination as? StackOverFlowDetailsViewController
+            destinationViewController?.setModel(stackOverFlowQuestionDetails: viewModel.selectedQuestion!)
+        }
+    }
+    
     private func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
@@ -64,6 +77,11 @@ extension StackOverFlowViewController: UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 20
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.currentSelectedQuestion(at: indexPath.row)
+        self.performSegue(withIdentifier: "DetailsSegue", sender: self)
     }
 }
 
