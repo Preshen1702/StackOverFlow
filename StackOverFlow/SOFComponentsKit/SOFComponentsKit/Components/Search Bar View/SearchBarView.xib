@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchBarView" customModule="SOFComponentsKit" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="e2r-A8-e8a" id="Rpe-jM-P1O"/>
+                <outlet property="searchBar" destination="LbJ-db-ebf" id="Hzr-rc-JBD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKY-VA-ez3">
+                    <rect key="frame" x="0.0" y="0.0" width="369" height="56"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbJ-db-ebf">
+                            <rect key="frame" x="0.0" y="0.0" width="311" height="56"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2r-A8-e8a">
+                            <rect key="frame" x="311" y="10" width="48" height="36"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="-1" eventType="touchUpInside" id="bXv-gQ-Ze7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="e2r-A8-e8a" secondAttribute="trailing" constant="10" id="FwW-MD-lpf"/>
+                        <constraint firstAttribute="bottom" secondItem="LbJ-db-ebf" secondAttribute="bottom" id="REA-f1-roQ"/>
+                        <constraint firstItem="e2r-A8-e8a" firstAttribute="top" secondItem="VKY-VA-ez3" secondAttribute="top" constant="10" id="TCX-U2-324"/>
+                        <constraint firstItem="e2r-A8-e8a" firstAttribute="leading" secondItem="LbJ-db-ebf" secondAttribute="trailing" id="Z2A-Y0-aJf"/>
+                        <constraint firstItem="LbJ-db-ebf" firstAttribute="leading" secondItem="VKY-VA-ez3" secondAttribute="leading" id="a0R-yc-KtK"/>
+                        <constraint firstItem="LbJ-db-ebf" firstAttribute="top" secondItem="VKY-VA-ez3" secondAttribute="top" id="aZI-wi-iAL"/>
+                        <constraint firstAttribute="bottom" secondItem="e2r-A8-e8a" secondAttribute="bottom" constant="10" id="xGS-dO-iVk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="VKY-VA-ez3" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Lsh-v7-Esp"/>
+                <constraint firstItem="VKY-VA-ez3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PTG-f0-Op9"/>
+                <constraint firstItem="VKY-VA-ez3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="WmY-AK-ktW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="156.5625" y="-177.46478873239437"/>
+        </view>
+    </objects>
+</document>
