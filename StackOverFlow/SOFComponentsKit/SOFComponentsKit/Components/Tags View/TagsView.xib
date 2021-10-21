@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TagsView" customModule="SOFComponentsKit" customModuleProvider="target">
+            <connections>
+                <outlet property="tagsLabelView" destination="vWS-Fj-Fif" id="yKJ-hb-AC5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="22"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrT-6s-Ses">
+                    <rect key="frame" x="0.0" y="0.0" width="367" height="22"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWS-Fj-Fif">
+                            <rect key="frame" x="20" y="5" width="327" height="12"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                            <color key="textColor" red="0.44705882352941173" green="0.44705882352941173" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dz-Ps-OT6">
+                            <rect key="frame" x="0.0" y="0.0" width="367" height="3"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="dHI-im-dwB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="7dz-Ps-OT6" secondAttribute="trailing" id="9bB-Kk-T5f"/>
+                        <constraint firstAttribute="bottom" secondItem="vWS-Fj-Fif" secondAttribute="bottom" constant="5" id="O1I-iH-zha"/>
+                        <constraint firstItem="vWS-Fj-Fif" firstAttribute="leading" secondItem="vrT-6s-Ses" secondAttribute="leading" constant="20" symbolic="YES" id="c8f-2v-Vnm"/>
+                        <constraint firstAttribute="trailing" secondItem="vWS-Fj-Fif" secondAttribute="trailing" constant="20" symbolic="YES" id="gGs-aB-rma"/>
+                        <constraint firstItem="vWS-Fj-Fif" firstAttribute="top" secondItem="vrT-6s-Ses" secondAttribute="top" constant="5" id="viB-cW-OTf"/>
+                        <constraint firstItem="7dz-Ps-OT6" firstAttribute="leading" secondItem="vrT-6s-Ses" secondAttribute="leading" id="y5F-5T-fgX"/>
+                        <constraint firstItem="7dz-Ps-OT6" firstAttribute="top" secondItem="vrT-6s-Ses" secondAttribute="top" id="yp4-Wj-O4F"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vrT-6s-Ses" secondAttribute="trailing" id="9Wm-47-POU"/>
+                <constraint firstItem="vrT-6s-Ses" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="W3b-U3-BcE"/>
+                <constraint firstItem="vrT-6s-Ses" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aYj-mW-RCZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-160.3125" y="-184.85915492957747"/>
+        </view>
+    </objects>
+</document>

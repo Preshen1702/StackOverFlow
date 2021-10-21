@@ -14,6 +14,7 @@ public protocol SearchBarViewDelegate: NSObjectProtocol {
 
 import UIKit
 
+@IBDesignable
 public final class SearchBarView: UIView {
     
     @IBOutlet private var searchBar: UISearchBar!
