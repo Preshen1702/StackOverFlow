@@ -63,7 +63,7 @@ public final class ListView: UIView {
     }
 }
 
-extension UIView {
+public extension UIView {
     func setupNib() {
         let className = String(describing: type(of: self))
         let nib = UINib(nibName: className, bundle: Bundle(for: type(of: self)))
