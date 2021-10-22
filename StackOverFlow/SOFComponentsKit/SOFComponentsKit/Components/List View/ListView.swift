@@ -29,7 +29,7 @@ public struct ListContentModel {
 }
 
 @IBDesignable
-public final class ListView: UIView {
+public final class ListView: BaseView {
     
     @IBOutlet private var titleLabelView: UILabel!
     @IBOutlet private var votesLabel: UILabel!
@@ -37,17 +37,7 @@ public final class ListView: UIView {
     @IBOutlet private var viewsLabel: UILabel!
     @IBOutlet private var contentView: UIView!
     @IBOutlet private var askedByLabel: UILabel!
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.setupNib()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.setupNib()
-    }
-    
+
     @IBInspectable public var titleLabelText: String? {
         didSet {
             self.titleLabelView.text = titleLabelText
@@ -60,17 +50,5 @@ public final class ListView: UIView {
         self.answersLabel.text = content.answersLabel
         self.viewsLabel.text = content.viewsLabel
         self.askedByLabel.text = content.askedByLabel
-    }
-}
-
-extension UIView {
-    func setupNib() {
-        let className = String(describing: type(of: self))
-        let nib = UINib(nibName: className, bundle: Bundle(for: type(of: self)))
-        let nibView = nib.instantiate(withOwner: self, options: nil).first as? UIView
-        nibView?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        self.addSubview(nibView ?? UIView())
-        nibView?.frame = self.bounds
-        self.backgroundColor = .clear
     }
 }

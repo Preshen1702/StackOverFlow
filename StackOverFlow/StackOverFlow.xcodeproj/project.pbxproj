@@ -14,6 +14,7 @@
 		8D3BCCCB2720149B002A21AD /* SOFComponentsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3BCCC42720147C002A21AD /* SOFComponentsKit.framework */; };
 		8D3BCCCC2720149B002A21AD /* SOFComponentsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3BCCC42720147C002A21AD /* SOFComponentsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D3BCCE527202525002A21AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3BCCE427202525002A21AD /* Images.xcassets */; };
+		8D765AB327205ED200D8D609 /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D765AB227205ED200D8D609 /* ListCellView.swift */; };
 		8DA48C0927200C110055E893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C0827200C110055E893 /* AppDelegate.swift */; };
 		8DA48C0B27200C110055E893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C0A27200C110055E893 /* SceneDelegate.swift */; };
 		8DA48C0D27200C110055E893 /* StackOverFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C0C27200C110055E893 /* StackOverFlowViewController.swift */; };
@@ -21,6 +22,10 @@
 		8DA48C1327200C110055E893 /* StackOverFlow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48C1127200C110055E893 /* StackOverFlow.xcdatamodeld */; };
 		8DA48C1527200C130055E893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA48C1427200C130055E893 /* Assets.xcassets */; };
 		8DA48C1827200C130055E893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA48C1627200C130055E893 /* LaunchScreen.storyboard */; };
+		8DD00A3F27215B9500CF1663 /* StackOverFlowDetailsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD00A3E27215B9500CF1663 /* StackOverFlowDetailsScreen.storyboard */; };
+		8DD00A4327215BA400CF1663 /* StackOverFlowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD00A4227215BA400CF1663 /* StackOverFlowDetailsViewController.swift */; };
+		8DD00A4727215BB700CF1663 /* StackOverFlowDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD00A4627215BB700CF1663 /* StackOverFlowDetailsViewModel.swift */; };
+		8DD00A6B27216EE500CF1663 /* StackOverFlowQuestionDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD00A6A27216EE500CF1663 /* StackOverFlowQuestionDetailsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +108,7 @@
 		8D006FB52720545C001223D4 /* StackOverFlowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlowViewModel.swift; sourceTree = "<group>"; };
 		8D3BCCBE2720147C002A21AD /* SOFComponentsKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SOFComponentsKit.xcodeproj; path = SOFComponentsKit/SOFComponentsKit.xcodeproj; sourceTree = "<group>"; };
 		8D3BCCE427202525002A21AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8D765AB227205ED200D8D609 /* ListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
 		8DA48C0527200C110055E893 /* StackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA48C0827200C110055E893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DA48C0A27200C110055E893 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +120,11 @@
 		8DA48C1927200C130055E893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DA48C1E27200C130055E893 /* StackOverFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA48C2927200C130055E893 /* StackOverFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD00A3E27215B9500CF1663 /* StackOverFlowDetailsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackOverFlowDetailsScreen.storyboard; sourceTree = "<group>"; };
+		8DD00A4227215BA400CF1663 /* StackOverFlowDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlowDetailsViewController.swift; sourceTree = "<group>"; };
+		8DD00A4627215BB700CF1663 /* StackOverFlowDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlowDetailsViewModel.swift; sourceTree = "<group>"; };
+		8DD00A6A27216EE500CF1663 /* StackOverFlowQuestionDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlowQuestionDetailsModel.swift; sourceTree = "<group>"; };
+		8DD00A6F2721857300CF1663 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/StackOverFlowMainScreen.strings; sourceTree = "<group>"; };
 		8DD52D3C272011C30098170A /* components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,6 +167,7 @@
 		8D006FA927205291001223D4 /* Main Screen */ = {
 			isa = PBXGroup;
 			children = (
+				8D765AAB27205E4200D8D609 /* Table Cell (ListCellView) */,
 				8D006FAC272052B6001223D4 /* Model */,
 				8DA48C0E27200C110055E893 /* StackOverFlowMainScreen.storyboard */,
 				8DA48C0C27200C110055E893 /* StackOverFlowViewController.swift */,
@@ -179,6 +191,14 @@
 				8D3BCCC62720147C002A21AD /* SOFComponentsKitTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8D765AAB27205E4200D8D609 /* Table Cell (ListCellView) */ = {
+			isa = PBXGroup;
+			children = (
+				8D765AB227205ED200D8D609 /* ListCellView.swift */,
+			);
+			path = "Table Cell (ListCellView)";
 			sourceTree = "<group>";
 		};
 		8DA48BFC27200C110055E893 = {
@@ -205,6 +225,7 @@
 		8DA48C0727200C110055E893 /* StackOverFlow */ = {
 			isa = PBXGroup;
 			children = (
+				8DD00A3D27215B7C00CF1663 /* Details Screen */,
 				8D006FA927205291001223D4 /* Main Screen */,
 				8DA48C0827200C110055E893 /* AppDelegate.swift */,
 				8DA48C0A27200C110055E893 /* SceneDelegate.swift */,
@@ -215,6 +236,25 @@
 				8DA48C1127200C110055E893 /* StackOverFlow.xcdatamodeld */,
 			);
 			path = StackOverFlow;
+			sourceTree = "<group>";
+		};
+		8DD00A3D27215B7C00CF1663 /* Details Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8DD00A6927216ED100CF1663 /* Model */,
+				8DD00A3E27215B9500CF1663 /* StackOverFlowDetailsScreen.storyboard */,
+				8DD00A4227215BA400CF1663 /* StackOverFlowDetailsViewController.swift */,
+				8DD00A4627215BB700CF1663 /* StackOverFlowDetailsViewModel.swift */,
+			);
+			path = "Details Screen";
+			sourceTree = "<group>";
+		};
+		8DD00A6927216ED100CF1663 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DD00A6A27216EE500CF1663 /* StackOverFlowQuestionDetailsModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8DD52D3B272011C30098170A /* Frameworks */ = {
@@ -376,6 +416,7 @@
 				8D3BCCE527202525002A21AD /* Images.xcassets in Resources */,
 				8DA48C1527200C130055E893 /* Assets.xcassets in Resources */,
 				8DA48C1027200C110055E893 /* StackOverFlowMainScreen.storyboard in Resources */,
+				8DD00A3F27215B9500CF1663 /* StackOverFlowDetailsScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +442,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DA48C1327200C110055E893 /* StackOverFlow.xcdatamodeld in Sources */,
+				8DD00A6B27216EE500CF1663 /* StackOverFlowQuestionDetailsModel.swift in Sources */,
+				8DD00A4727215BB700CF1663 /* StackOverFlowDetailsViewModel.swift in Sources */,
+				8D765AB327205ED200D8D609 /* ListCellView.swift in Sources */,
+				8DD00A4327215BA400CF1663 /* StackOverFlowDetailsViewController.swift in Sources */,
 				8DA48C0D27200C110055E893 /* StackOverFlowViewController.swift in Sources */,
 				8D006FA427204D71001223D4 /* StackOverFlowQuestionsModel.swift in Sources */,
 				8D006FB62720545C001223D4 /* StackOverFlowViewModel.swift in Sources */,
@@ -453,6 +498,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8DA48C0F27200C110055E893 /* Base */,
+				8DD00A6F2721857300CF1663 /* en */,
 			);
 			name = StackOverFlowMainScreen.storyboard;
 			sourceTree = "<group>";
