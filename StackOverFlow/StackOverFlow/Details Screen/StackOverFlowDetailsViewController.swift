@@ -54,6 +54,6 @@ extension StackOverFlowDetailsViewController: BaseViewModelDelegate {
     }
     
     func showErrorMessage(errorMessage: String) {
-        
+        self.showAlert(with: "Error", message: "Something went wrong")
     }
 }

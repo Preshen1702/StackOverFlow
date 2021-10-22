@@ -20,4 +20,11 @@ open class BaseViewController: UIViewController {
         let attrs = [NSAttributedString.Key.foregroundColor: UIColor.white]
         UINavigationBar.appearance().titleTextAttributes = attrs
     }
+    
+    public func showAlert(with title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
 }

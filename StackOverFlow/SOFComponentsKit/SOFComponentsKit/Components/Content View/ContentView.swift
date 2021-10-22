@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-public final class ContentView: UIView {
+public final class ContentView: BaseView {
     
     @IBOutlet private var contentLabelView: UILabel!
     
@@ -17,15 +17,5 @@ public final class ContentView: UIView {
         didSet {
             self.contentLabelView.text = contentLabelText
         }
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.setupNib()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.setupNib()
     }
 }

@@ -48,16 +48,11 @@ class StackOverFlowViewModel {
     }
     
     func questionCard(at index: Int) -> ListContentModel {
-        return ListContentModel(titleLabel: getHtmlFormat(fromString: self.stackOverFlowQuestionsDetails?.items[index].title ?? "") ?? "",
+        return ListContentModel(titleLabel: stackOverFlowQuestionsDetails?.items[index].title.getHtmlFormat() ?? "",
                                 votesLabel:  "\(String(self.stackOverFlowQuestionsDetails?.items[index].score ?? 0)) Votes",
                                 answersLabel:  "\(String(self.stackOverFlowQuestionsDetails?.items[index].answerCount ?? 0)) answers",
                                 viewsLabel: "\(String(self.stackOverFlowQuestionsDetails?.items[index].viewCount ?? 0)) views",
                                 askedByLabel: "asked by \(self.stackOverFlowQuestionsDetails?.items[index].owner.displayName ?? "")")
-    }
-    
-    func getHtmlFormat(fromString htmlString: String) -> String? {
-        guard let htmlData = htmlString.data(using: String.Encoding.unicode) else { return nil }
-        return try? NSAttributedString(data: htmlData, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil).string
     }
     
     func searchStackOverFlow(with keyword: String) {

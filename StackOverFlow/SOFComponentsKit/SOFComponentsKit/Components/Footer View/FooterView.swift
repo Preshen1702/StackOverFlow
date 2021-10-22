@@ -26,25 +26,17 @@ public struct FooterContentModel {
 }
 
 @IBDesignable
-public final class FooterView: UIView {
+public final class FooterView: BaseView {
     
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var descriptionLabel: UILabel!
     @IBOutlet private var subDescriptionLabel: UILabel!
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.setupNib()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.setupNib()
-    }
+    @IBOutlet private var loadingIndicator: UIActivityIndicatorView!
     
     @IBInspectable public var image: UIImage? {
         didSet {
+            self.loadingIndicator.stopAnimating()
             self.imageView.image = image
         }
     }

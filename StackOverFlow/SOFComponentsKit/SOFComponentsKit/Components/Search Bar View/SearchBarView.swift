@@ -15,20 +15,15 @@ public protocol SearchBarViewDelegate: NSObjectProtocol {
 import UIKit
 
 @IBDesignable
-public final class SearchBarView: UIView {
+public final class SearchBarView: BaseView {
     
     @IBOutlet private var searchBar: UISearchBar!
     @IBOutlet private var cancelButton: UIButton!
     
     public weak var delegate: SearchBarViewDelegate?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.setupSearchBarView()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    public override func awakeFromNib() {
+        super.awakeFromNib()
         self.setupSearchBarView()
     }
     

@@ -24,6 +24,10 @@
 		8DD00A7D2721EBD700CF1663 /* TagsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DD00A7C2721EBD700CF1663 /* TagsView.xib */; };
 		8DD00A812721EBE200CF1663 /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD00A802721EBE200CF1663 /* TagsView.swift */; };
 		8DD00A892721F1E600CF1663 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD00A882721F1E600CF1663 /* BaseViewController.swift */; };
+		8DD00A902721F3C500CF1663 /* String+HTMLtoString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD00A8F2721F3C500CF1663 /* String+HTMLtoString.swift */; };
+		8DD00A962721F49200CF1663 /* Date+ConvertDateToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD00A952721F49200CF1663 /* Date+ConvertDateToString.swift */; };
+		8DD00A9B2722904B00CF1663 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD00A9A2722904B00CF1663 /* BaseView.swift */; };
+		8DE2F7A52722915D00DD4D5A /* UIView+NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2F7A42722915D00DD4D5A /* UIView+NibView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		8DD00A7C2721EBD700CF1663 /* TagsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagsView.xib; sourceTree = "<group>"; };
 		8DD00A802721EBE200CF1663 /* TagsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsView.swift; sourceTree = "<group>"; };
 		8DD00A882721F1E600CF1663 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8DD00A8F2721F3C500CF1663 /* String+HTMLtoString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTMLtoString.swift"; sourceTree = "<group>"; };
+		8DD00A952721F49200CF1663 /* Date+ConvertDateToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ConvertDateToString.swift"; sourceTree = "<group>"; };
+		8DD00A9A2722904B00CF1663 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		8DE2F7A42722915D00DD4D5A /* UIView+NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 		8D3BCCA427201448002A21AD /* SOFComponentsKit */ = {
 			isa = PBXGroup;
 			children = (
+				8DD00A8E2721F3AC00CF1663 /* Categories */,
 				8DD00A872721F1D100CF1663 /* BaseViewController */,
 				8D3BCCD0272014B6002A21AD /* Components */,
 				8D3BCCA527201448002A21AD /* SOFComponentsKit.h */,
@@ -120,6 +129,7 @@
 		8D3BCCD0272014B6002A21AD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8DD00A992722903B00CF1663 /* Base View */,
 				8DD00A842721EBEF00CF1663 /* Tags View */,
 				8DD00A602721689A00CF1663 /* Heading View */,
 				8DD00A4A27215FD900CF1663 /* Footer View */,
@@ -190,6 +200,24 @@
 				8DD00A882721F1E600CF1663 /* BaseViewController.swift */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		8DD00A8E2721F3AC00CF1663 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8DD00A8F2721F3C500CF1663 /* String+HTMLtoString.swift */,
+				8DD00A952721F49200CF1663 /* Date+ConvertDateToString.swift */,
+				8DE2F7A42722915D00DD4D5A /* UIView+NibView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8DD00A992722903B00CF1663 /* Base View */ = {
+			isa = PBXGroup;
+			children = (
+				8DD00A9A2722904B00CF1663 /* BaseView.swift */,
+			);
+			path = "Base View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,8 +340,12 @@
 				8DD00A66272168B400CF1663 /* HeadingView.swift in Sources */,
 				8D765AC52720707700D8D609 /* SearchBarView.swift in Sources */,
 				8DD00A5B2721655D00CF1663 /* ContentView.swift in Sources */,
+				8DD00A962721F49200CF1663 /* Date+ConvertDateToString.swift in Sources */,
 				8D3BCCD9272015D7002A21AD /* ListView.swift in Sources */,
+				8DD00A902721F3C500CF1663 /* String+HTMLtoString.swift in Sources */,
+				8DD00A9B2722904B00CF1663 /* BaseView.swift in Sources */,
 				8DD00A892721F1E600CF1663 /* BaseViewController.swift in Sources */,
+				8DE2F7A52722915D00DD4D5A /* UIView+NibView.swift in Sources */,
 				8DD00A812721EBE200CF1663 /* TagsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

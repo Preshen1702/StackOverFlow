@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-public final class HeadingView: UIView {
+public final class HeadingView: BaseView {
     
     @IBOutlet private var headingLabelView: UILabel!
     
@@ -18,15 +18,4 @@ public final class HeadingView: UIView {
             self.headingLabelView.text = headingLabelText
         }
     }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.setupNib()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.setupNib()
-    }
-    
 }

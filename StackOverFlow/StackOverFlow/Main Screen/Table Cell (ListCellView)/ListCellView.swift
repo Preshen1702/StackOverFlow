@@ -11,7 +11,6 @@ import SOFComponentsKit
 
 class ListCellView: UITableViewCell {
     
- 
     @IBOutlet private var listInputView: ListView!
     
     func populate(with content: ListContentModel) {

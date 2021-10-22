@@ -9,7 +9,7 @@ import UIKit
 import SOFComponentsKit
 import SOFNetworkKit
 
-class StackOverFlowViewController: UIViewController {
+class StackOverFlowViewController: BaseViewController {
     
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var searchBarView: SearchBarView!
@@ -60,7 +60,7 @@ extension StackOverFlowViewController: BaseViewModelDelegate {
     }
     
     func showErrorMessage(errorMessage: String) {
-        //TODO
+        self.showAlert(with: "Error", message: "Something went wrong")
     }
 }
 

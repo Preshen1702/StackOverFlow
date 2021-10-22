@@ -11,6 +11,7 @@
             <connections>
                 <outlet property="descriptionLabel" destination="QOY-hF-Mjn" id="Veo-LR-QoW"/>
                 <outlet property="imageView" destination="va9-ZL-6pn" id="klS-SU-4hn"/>
+                <outlet property="loadingIndicator" destination="DSX-1E-4s8" id="Bem-mD-dCU"/>
                 <outlet property="subDescriptionLabel" destination="UwA-hU-inN" id="04J-sb-Wo1"/>
                 <outlet property="titleLabel" destination="bTc-f8-CR9" id="JIi-d0-Zoi"/>
             </connections>
@@ -49,6 +50,9 @@
                         </label>
                     </subviews>
                 </stackView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="DSX-1E-4s8">
+                    <rect key="frame" x="20" y="15" width="48" height="48"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -56,10 +60,14 @@
                 <constraint firstItem="va9-ZL-6pn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="5Vo-so-Omp"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="va9-ZL-6pn" secondAttribute="bottom" constant="15" id="6YD-xv-ZiT"/>
                 <constraint firstItem="m16-za-dOP" firstAttribute="leading" secondItem="va9-ZL-6pn" secondAttribute="trailing" constant="8" symbolic="YES" id="MLn-mn-W77"/>
+                <constraint firstItem="DSX-1E-4s8" firstAttribute="top" secondItem="va9-ZL-6pn" secondAttribute="top" id="VHa-ni-KHW"/>
                 <constraint firstItem="va9-ZL-6pn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="dPu-hT-fht"/>
+                <constraint firstItem="DSX-1E-4s8" firstAttribute="bottom" secondItem="va9-ZL-6pn" secondAttribute="bottom" id="jJQ-xC-Vh8"/>
                 <constraint firstItem="m16-za-dOP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="l1I-BC-Msr"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m16-za-dOP" secondAttribute="trailing" constant="10" id="v4w-Mm-WT0"/>
                 <constraint firstItem="va9-ZL-6pn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="x1A-sp-F96"/>
+                <constraint firstItem="DSX-1E-4s8" firstAttribute="trailing" secondItem="va9-ZL-6pn" secondAttribute="trailing" id="xE9-Kr-xNH"/>
+                <constraint firstItem="DSX-1E-4s8" firstAttribute="leading" secondItem="va9-ZL-6pn" secondAttribute="leading" id="xjT-0V-LIV"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="203.4375" y="-155.28169014084509"/>

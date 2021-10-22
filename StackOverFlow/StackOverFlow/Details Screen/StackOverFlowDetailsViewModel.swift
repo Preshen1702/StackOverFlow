@@ -25,11 +25,11 @@ class StackOverFlowDetailsViewModel {
     }
     
     var bodyContent: String {
-        return self.getHtmlFormat(fromString: stackOverFlowQuestionDetails.bodyContent) ?? ""
+        return stackOverFlowQuestionDetails.bodyContent.getHtmlFormat() ?? ""
     }
     
     var titleContent: String {
-        return self.getHtmlFormat(fromString: stackOverFlowQuestionDetails.title) ?? ""
+        return stackOverFlowQuestionDetails.title.getHtmlFormat() ?? ""
     }
     
     var acceptRate: String {
@@ -49,15 +49,7 @@ class StackOverFlowDetailsViewModel {
     }
     
     var date: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd MMMM YYYY hh:mm a"
-        let dateString = dateFormatter.string(from: stackOverFlowQuestionDetails.creationDate ?? Date())
-        return dateString
-    }
-    
-    func getHtmlFormat(fromString htmlString: String) -> String? {
-        guard let htmlData = htmlString.data(using: String.Encoding.unicode) else { return nil }
-        return try? NSAttributedString(data: htmlData, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil).string
+        return stackOverFlowQuestionDetails.creationDate?.convertDate(by: "dd MMMM YYYY hh:mm a") ?? ""
     }
     
     func searchStackOverFlow(with imageURL: String) {

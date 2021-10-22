@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-public final class TagsView: UIView {
+public final class TagsView: BaseView {
     
     @IBOutlet private var tagsLabelView: UILabel!
     
@@ -18,15 +18,4 @@ public final class TagsView: UIView {
             self.tagsLabelView.text = tagsLabelText
         }
     }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.setupNib()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.setupNib()
-    }
-    
 }
